@@ -31,6 +31,9 @@ set autoindent                           "le nuove righe hanno stessa indentazio
 " Mapping
 nnoremap ù /
 
+"Stampa
+set printoptions=header:0,duplex:long,paper:A4
+
 " Aspetto
 if has('gui_running') || has('gui_vimr')
     colorscheme desert
