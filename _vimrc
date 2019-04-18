@@ -28,6 +28,10 @@ set softtabstop=4                        "???
 set expandtab                            "inserisce spazi al posto di tab
 set autoindent                           "le nuove righe hanno stessa indentazione delle precedenti
 
+" Filetype
+filetype on
+filetype indent on
+
 " Mapping
 nnoremap ù /
 
