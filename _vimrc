@@ -41,4 +41,9 @@ set printoptions=header:0,duplex:long,paper:A4
 " Aspetto
 if has('gui_running') || has('gui_vimr')
     colorscheme desert
+
+    " Opzioni specifiche per gui Windows
+    if has("win32")
+        set guifont=Consolas:h12
+    endif
 endif
