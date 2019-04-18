@@ -20,6 +20,8 @@ set laststatus=2                         "abilita la visualizzazione della statu
 " Opzioni disabilitate
 set nowrap                               "disabilita il soft-wrap
 set ignorecase                           "disabilita il match case sensitive
+set guioptions-=m                        "disabilita i menù
+set guioptions-=T                        "disabilita la barra degli strumenti
 
 " Tabulazione
 set tabstop=4                            "tab di dimensione 4
