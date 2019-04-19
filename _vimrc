@@ -16,6 +16,7 @@ set wrapscan                             "abilita la continuazione della ricerca
 set hidden                               "abilita la possibilità di nascondere buffer modificati senza doverli prima salvare
 set wildmenu                             "abilita la visualizzazione dei match durante la command-line completion
 set laststatus=2                         "abilita la visualizzazione della statusbar anche con una sola finestra presente
+set sidescroll=1                         "abilita lo scroll orizzontale di 1 carattere alla volta una volta raggiunta la fine della finestra visibile
 
 " Opzioni disabilitate
 set nowrap                               "disabilita il soft-wrap
