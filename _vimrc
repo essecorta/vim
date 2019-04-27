@@ -48,7 +48,5 @@ if has('gui_running') || has('gui_vimr')
     " Opzioni specifiche per gui Windows
     if has("win32")
         set guifont=Consolas:h12
-    elseif has("macunix")
-        set guifont=Monaco:h12
     endif
 endif
