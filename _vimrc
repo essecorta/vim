@@ -38,6 +38,9 @@ filetype indent on
 " Mapping
 nnoremap ù /
 
+inoremap <Tab> <Esc>
+inoremap <Leader> <Tab>
+
 "Stampa
 set printoptions=header:0,duplex:long,paper:A4
 
