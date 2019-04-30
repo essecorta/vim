@@ -17,9 +17,11 @@ set hidden                               "abilita la possibilità di nascondere b
 set wildmenu                             "abilita la visualizzazione dei match durante la command-line completion
 set laststatus=2                         "abilita la visualizzazione della statusbar anche con una sola finestra presente
 set sidescroll=1                         "abilita lo scroll orizzontale di 1 carattere alla volta una volta raggiunta la fine della finestra visibile
+set linebreak                            "in caso di wrap attivo va a capo senza spezzare le parole
 
 " Opzioni disabilitate
 set nowrap                               "disabilita il soft-wrap
+set nolist                               "non mostra i caratteri non stampabili
 set ignorecase                           "disabilita il match case sensitive
 set guioptions-=m                        "disabilita i menù
 set guioptions-=T                        "disabilita la barra degli strumenti
@@ -37,6 +39,7 @@ filetype indent on
 
 " Mapping
 nnoremap ù /
+imap jj <Esc>
 
 "Stampa
 set printoptions=header:0,duplex:long,paper:A4
@@ -48,5 +51,7 @@ if has('gui_running') || has('gui_vimr')
     " Opzioni specifiche per gui Windows
     if has("win32")
         set guifont=Consolas:h12
+    elseif has("macunix")
+        set guifont=Monaco:h12
     endif
 endif
