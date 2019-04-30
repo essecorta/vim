@@ -41,7 +41,10 @@ filetype indent on
 nnoremap ù /
 imap jj <Esc>
 
-"Stampa
+" Swap files
+set directory^=$HOME/.vim/tmp//
+
+" Stampa
 set printoptions=header:0,duplex:long,paper:A4
 
 " Aspetto
