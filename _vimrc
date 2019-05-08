@@ -44,7 +44,7 @@ imap jj <Esc>
 " Swap files
 set directory^=$HOME/.vim/tmp//
 
-" Stampa
+"Stampa
 set printoptions=header:0,duplex:long,paper:A4
 
 " Aspetto
@@ -58,3 +58,8 @@ if has('gui_running') || has('gui_vimr')
         set guifont=Monaco:h12
     endif
 endif
+
+"*** MACRO ***"
+"@f formatta il contenuto del buffer corrente in xml impostando filetype e
+"indentazione
+let @f = ':set filetype=xml:%s€K8€K8€K8g€kl€kl€kl><€kr><€kl\€kb=ggVG='
