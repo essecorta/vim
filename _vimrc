@@ -40,6 +40,8 @@ filetype indent on
 " Mapping
 nnoremap ù /
 imap jj <Esc>
+imap jk <Esc>
+imap kj <Esc>
 
 " Swap files
 set directory^=$HOME/.vim/tmp//
