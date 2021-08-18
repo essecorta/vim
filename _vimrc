@@ -13,7 +13,7 @@ set relativenumber                       "abilita i numeri di riga relativi
 set hlsearch                             "abilita l'evidenziazione dei risultati di una ricerca
 set incsearch                            "abilita la visualizzazione dei match parziali mentre si digita
 set wrapscan                             "abilita la continuazione della ricerca da BOF una volta raggiunto EOF (o viceversa)
-set hidden                               "abilita la possibilità di nascondere buffer modificati senza doverli prima salvare
+set hidden                               "abilita la possibilitÃ  di nascondere buffer modificati senza doverli prima salvare
 set wildmenu                             "abilita la visualizzazione dei match durante la command-line completion
 set laststatus=2                         "abilita la visualizzazione della statusbar anche con una sola finestra presente
 set sidescroll=1                         "abilita lo scroll orizzontale di 1 carattere alla volta una volta raggiunta la fine della finestra visibile
@@ -23,7 +23,7 @@ set linebreak                            "in caso di wrap attivo va a capo senza
 set nowrap                               "disabilita il soft-wrap
 set nolist                               "non mostra i caratteri non stampabili
 set ignorecase                           "disabilita il match case sensitive
-set guioptions-=m                        "disabilita i menù
+set guioptions-=m                        "disabilita i menÃ¹
 set guioptions-=T                        "disabilita la barra degli strumenti
 
 " Tabulazione
@@ -37,11 +37,15 @@ set autoindent                           "le nuove righe hanno stessa indentazio
 filetype on
 filetype indent on
 
+" Remap del Leader
+let mapleader = ","
+
 " Mapping
-nnoremap ù /
+nnoremap Ã¹ /
 imap jj <Esc>
 imap jk <Esc>
 imap kj <Esc>
+inoremap <leader>w <Esc>h:w<cr>
 
 " Swap files
 set directory^=$HOME/.vim/tmp//
@@ -64,4 +68,7 @@ endif
 "*** MACRO ***"
 "@f formatta il contenuto del buffer corrente in xml impostando filetype e
 "indentazione
-let @f = ':set filetype=xml:%s€K8€K8€K8g€kl€kl€kl><€kr><€kl\€kb=ggVG='
+let @f = ':set filetype=xml
+:%sâ‚¬K8â‚¬K8â‚¬K8gâ‚¬klâ‚¬klâ‚¬kl><â‚¬kr><â‚¬kl\â‚¬kb
+
+=ggVG='
